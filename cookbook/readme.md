@@ -34,7 +34,7 @@ print(mcq)
 
 #### Generating Multiple Questions with CSV Output
 
-If you need multiple MCQs and want to generate a CSV file containing these questions, you can specify the number of questions and the file name.
+If you need multiple MCQs and want you can specify the number of questions.
 
 ```python
 from educhain import qna_engine
@@ -42,13 +42,12 @@ from educhain import qna_engine
 topic = "Quantum Entanglement"
 level = "Intermediate"
 num = 5
-file_name = "python_mcq.csv"
 
-mcq = qna_engine.generate_mcq(topic, level, num=num, file_name=file_name)
+mcq = qna_engine.generate_mcq(topic, level, num=num)
 print(mcq)
 ```
 
-This will generate 5 MCQs on the topic of Quantum Entanglement and save them to a CSV file named "python_mcq.csv".
+This will generate 5 MCQs on the topic of Quantum Entanglement.
 
 ## 3. Creating Lesson Plans <a name="creating-lesson-plans"></a>
 
